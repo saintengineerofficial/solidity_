@@ -19,5 +19,5 @@ contract Array{
         return values.length;
     }
 
-    // 和js的数组差不多
+    // 和js的数组写法差不多，支持push和pop
 }

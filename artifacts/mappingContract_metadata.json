@@ -7,88 +7,51 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "getValuesCount",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
+				"stateMutability": "nonpayable",
+				"type": "constructor"
 			},
 			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_id",
 						"type": "uint256"
 					},
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "myArray2D",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "myStringArray",
-				"outputs": [
+						"internalType": "string",
+						"name": "_title",
+						"type": "string"
+					},
 					{
 						"internalType": "string",
-						"name": "",
+						"name": "_author",
 						"type": "string"
 					}
 				],
-				"stateMutability": "view",
+				"name": "addBook",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_id",
 						"type": "uint256"
-					}
-				],
-				"name": "myUintArray",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
+					},
 					{
 						"internalType": "string",
-						"name": "_value",
+						"name": "_title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_author",
 						"type": "string"
 					}
 				],
-				"name": "setValues",
+				"name": "addMyBook",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -101,7 +64,60 @@
 						"type": "uint256"
 					}
 				],
-				"name": "values",
+				"name": "books",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "author",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "myBooks",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "author",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "names",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -126,7 +142,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"array.sol": "Array"
+			"mapping.sol": "mappingContract"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -140,12 +156,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"array.sol": {
-			"keccak256": "0xd6936b911cfd8ba91eecad8853b2fb30ad476614520f2ca0d7847c02fa9b7c6a",
+		"mapping.sol": {
+			"keccak256": "0x0ac88457dd9b5078121834199f8590b1a31a752d96e80c10c781e3f3f6b0f176",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://84f2deec0854418b1eb76cf5a7ad7fdc4fb7848ecd3c1202bae4b77aed3bde6e",
-				"dweb:/ipfs/QmSaUwCGdAA3QtUJUZAh1CbkFS9skPifHbNTvRRPGPgS6b"
+				"bzz-raw://ff963b551484baccc7f61a234d7a93d76082220b0d38f388b0a5ffb32ee454f9",
+				"dweb:/ipfs/QmPqDCuyA7ijoD1fiFGnFxMZXRXNQmRp7K88QXpTbo9HT2"
 			]
 		}
 	},
