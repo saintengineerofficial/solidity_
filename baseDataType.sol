@@ -23,7 +23,8 @@ contract BaseDataType{
     }
     MyStruct public myStruct = MyStruct(1,'hello');
 
-    // 局部作用域，pure类似纯函数，不影响外部变量，returns指定返回类型
+    // 局部作用域，returns指定返回类型
+    // pure纯计算，不读也不写区块链，比如数学函数。
     function getValue() public pure returns (uint){
         uint value = 1;
         return value;
